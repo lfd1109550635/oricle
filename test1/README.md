@@ -1,37 +1,23 @@
 # oricle
-## 1.查询1
-<br>
-![image](https://github.com/lfd1109550635/oricle/blob/master/test1/1.png)
-![image](https://github.com/lfd1109550635/oricle/blob/master/test1/11.png)
-SELECT d.department_name，count(e.job_id)as "部门总人数"，
-avg(e.salary)as "平均工资"
-from hr.departments d，hr.employees e
-where d.department_id = e.department_id
-and d.department_name in ('IT'，'Sales')
-GROUP BY department_name;
-<br>
-## 2.查询2
-![image](https://github.com/lfd1109550635/oricle/blob/master/test1/2.png)
-![image](https://github.com/lfd1109550635/oricle/blob/master/test1/22.png)
-SELECT d.department_name，count(e.job_id)as "部门总人数"，
-avg(e.salary)as "平均工资"
-FROM hr.departments d，hr.employees e
-WHERE d.department_id = e.department_id
-GROUP BY department_name
-HAVING d.department_name in ('IT'，'Sales');
-## 3.自定义语句
-```java
-SELECT d.department_name ,count(e.job_id)as "部门总人数" ,
-avg(e.salary)as "平均工资"
-FROM hr.departments d, hr.employees e
-WHERE d.department_id = e.department_id
-and d.department_name = 'IT' or d.department_name = 'Sales'
-GROUP BY department_name 
-```
-### 3.1查询结果
 
-### 3.2优化指导
-取消where语句处大量的笛卡尔积操作
-
-## 4.总结
-oracle的优化指导很好用
+教材中的查询语句
+查询1:  
+![image](https://github.com/lfd1109550635/oracle/blob/master/TEST1/1.png)<br>
+SELECT d.department_name，count（e.job_id）as“部门总人数” <br>
+avg（e.salary）as“平均工资<br>
+from hr.departments d，hr.employees e<br>
+where d.department_id = e.department_id<br>
+and d.department_name in ('IT'，'Sales')<br>
+GROUP BY department_name;<br>
+![image](https://github.com/lfd1109550635/oracle/blob/master/TEST1/11.png)<br>
+查询2：  
+![image](https://github.com/lfd1109550635/oracle/blob/master/TEST1/2.png)<br>
+SELECT d.department_name，count(e.job_id)as "部门总人数"，<br>
+avg(e.salary)as "平均工资"<br><br><br>
+FROM hr.departments d，hr.employees e<br><br>
+WHERE d.department_id = e.department_id<br>
+GROUP BY department_name<br>
+HAVING d.department_name in ('IT'，'Sales');<br>
+![image](https://github.com/lfd1109550635/oracle/blob/master/TEST1/22.png)<br>
+   
+我认为查询一的语句是最优，因为代码中应该避免使用having子句，having只会在检索出所有记录之后才会对结果进行过滤，因此查询二代码会更慢
