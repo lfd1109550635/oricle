@@ -29,7 +29,6 @@ and d.department_name = 'IT' or d.department_name = 'Sales'
 GROUP BY department_name 
 ```
 ### 3.1查询结果
-![blockchain](https://github.com/DevinChenPeng/oracle/blob/master/UD4K3WWOLD_O%5B8_S0CO60%5DI.png "区块链")
 
 ### 3.2优化指导
 取消where语句处大量的笛卡尔积操作
