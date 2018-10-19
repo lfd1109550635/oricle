@@ -1,5 +1,6 @@
 # oricle
 查询1
+<br>
 ![image](https://github.com/lfd1109550635/oricle/blob/master/test1/1.png)
 ![image](https://github.com/lfd1109550635/oricle/blob/master/test1/11.png)
 SELECT d.department_name，count(e.job_id)as "部门总人数"，
