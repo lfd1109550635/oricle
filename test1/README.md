@@ -10,3 +10,5 @@ and d.department_name in ('IT'，'Sales')
 GROUP BY department_name;
 <br>
 查询2
+![image]()
+![image]()
