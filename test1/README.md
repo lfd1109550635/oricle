@@ -20,7 +20,7 @@ GROUP BY department_name<br>
 HAVING d.department_name in ('IT'，'Sales');<br>
 ![image](https://github.com/lfd1109550635/oracle/blob/master/TEST1/22.png)<br>
    
-我认为查询一的语句是最优，因为代码中应该避免使用having子句，having只会在检索出所有记录之后才会对结果进行过滤，因此查询二代码会更慢
+分析：查询1语句优于查询2语句，因为代码中应该避免使用having子句，而查询2语句中有，所以查询2语句更慢
 3.自己的代码
 ```java
 SELECT d.department_name ,count(e.job_id)as "部门总人数" ,
@@ -30,8 +30,8 @@ WHERE d.department_id = e.department_id
 and d.department_name = 'IT' or d.department_name = 'Sales'
 GROUP BY department_name 
 ```
-3.1 自己的代码
-![blockchain](https://github.com/DevinChenPeng/oracle/blob/master/UD4K3WWOLD_O%5B8_S0CO60%5DI.png "区块链")
+##3.1 自己的代码
+![image](https://github.com/lfd1109550635/oricle/blob/master/test1/3.png)
 
 3.2指导优化
 取消where语句处大量的笛卡尔积操作
