@@ -30,7 +30,7 @@ WHERE d.department_id = e.department_id
 and d.department_name = 'IT' or d.department_name = 'Sales'
 GROUP BY department_name 
 ```
-##3.1 自己的代码
+3.1 自己的代码
 ![image](https://github.com/lfd1109550635/oricle/blob/master/test1/3.png)
 
 3.2指导优化
