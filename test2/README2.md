@@ -58,6 +58,6 @@ SQL>SELECT a.tablespace_name "表空间名",Total/1024/1024 "大小MB",<br>
         group  BY tablespace_name)b<br>
  where  a.tablespace_name = b.tablespace_name;<br>
  SQL-DEVELOPER修改用户的操作界面：<br>
- ![image](https://github.com/lfd1109550635/oricle/blob/master/test2/2.3.PNG)<br>
+ ![image](https://github.com/lfd1109550635/oricle/blob/master/test2/2.3%20(1).PNG)<br>
  sqldeveloper授权对象的操作界面：<br>
  ![image](https://github.com/lfd1109550635/oricle/blob/master/test2/2.5.PNG)<br>
