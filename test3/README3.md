@@ -136,7 +136,7 @@
  ```
 
 
- ![image](https://github.com/wangmingran9527/oracle/blob/master/test3/2.PNG)
+ ![image](https://github.com/lfd1109550635/oricle/blob/master/test3/2.PNG)
 
 
  
@@ -205,7 +205,7 @@
  ```
 
 
- ![image](https://github.com/wangmingran9527/oracle/blob/master/test3/3.PNG)
+ ![image](https://github.com/lfd1109550635/oricle/blob/master/test3/3.PNG)
 
 
  ## 录入代码
@@ -220,13 +220,13 @@ INSERT INTO orders(order_id,customer_name, customer_tel, order_date, employee_id
 ```
 
 
-![image](https://github.com/wangmingran9527/oracle/blob/master/test3/4.PNG)
+![image](https://github.com/lfd1109550635/oricle/blob/master/test3/4.PNG)
 
 
-![image](https://github.com/wangmingran9527/oracle/blob/master/test3/6.PNG)
+![image](https://github.com/lfd1109550635/oricle/blob/master/test3/6.PNG)
 
 
-![image](https://github.com/wangmingran9527/oracle/blob/master/test3/4.PNG)
+![image](https://github.com/lfd1109550635/oricle/blob/master/test3/4.PNG)
 
 
 ##查看数据库使用情况
@@ -246,7 +246,7 @@ SQL>SELECT tablespace_name,FILE_NAME,BYTES/1024/1024 MB,MAXBYTES/1024/1024 MAX_M
  ```
 
 
-![image](https://github.com/wangmingran9527/oracle/blob/master/test3/5.PNG)
+![image](https://github.com/lfd1109550635/oricle/blob/master/test3/5.PNG)
 
 
 ##执行计划分析
