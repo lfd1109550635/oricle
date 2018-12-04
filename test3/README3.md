@@ -136,7 +136,7 @@
  ```
 
 
- ![image](https://github.com/lfd1109550635/oricle/blob/master/test3/2.PNG)
+ ![image](https://github.com/lfd1109550635/oricle/blob/master/test3/2.png)
 
 
  
