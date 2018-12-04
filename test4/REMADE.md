@@ -26,7 +26,7 @@ ALTER USER DEFAULT ROLE "CONNECT","RESOURCE";
 ```
 结果
 
-![分配权限结果](./分配权限.png)
+![images](https://github.com/lfd1109550635/oricle/blob/master/test4/分配权限11.png)
 
 ### 系统权限分配
 ```sql
@@ -34,7 +34,7 @@ GRANT CREATE VIEW TO WITH ADMIN OPTION;
 ```
 结果
 
-![系统权限授权结果](./系统权限授权.png)
+![images](https://github.com/lfd1109550635/oricle/blob/master/test4/系统权限授权11.png)
 
 ### 添加实验所需表和相应触发器、序列、视图
 >具体代码查看同级目录下实验四.sql文件
@@ -132,11 +132,11 @@ end;
 
 1).插入时间
 
-![批量插入订单数据时间](./插入订单数据时间.png)
+![images](https://github.com/lfd1109550635/oricle/blob/master/test4/插入订单数据时间11.png)
 
 2).插入结果
 
-![批量插入订单数据结果](./批量插入订单数据.png)
+![images](https://github.com/lfd1109550635/oricle/blob/master/test4/批量插入订单数据11.png)
 
 ### 查询数据
 
@@ -162,6 +162,6 @@ SELECT * FROM employees START WITH EMPLOYEE_ID = 11 CONNECT BY PRIOR EMPLOYEE_ID
 ```
 查询结果
 
-![递归查询员工结果](./递归查询员工.png)
+![images](https://github.com/lfd1109550635/oricle/blob/master/test4/递归查询员工11.png)
 
 >更多详细sql语句请查看实验4.sql
