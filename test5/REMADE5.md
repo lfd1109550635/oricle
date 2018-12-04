@@ -40,13 +40,13 @@ create or replace PACKAGE BODY MyPack IS
     END;
 END MyPack;
 ```
-![包创建及设置函数过程结果](./包创建及设置函数,过程.png)
+![images](https://github.com/lfd1109550635/oricle/blob/master/test5/包创建及设置函数,过程11.png)
 #### 调用函数及过程
 ```sql
 select count(*) from orders;
 select MyPack.Get_SaleAmount(11) AS 部门11应收金额,MyPack.Get_SaleAmount(12) AS 部门12应收金额 from dual;
 ```
-![函数调用结果](./函数调用.png)
+![images](https://github.com/lfd1109550635/oricle/blob/master/test5/函数调用11.png)
 
 ```sql
 set serveroutput on
@@ -59,7 +59,7 @@ BEGIN
   MYPACK.Get_Employees (  V_EMPLOYEE_ID => V_EMPLOYEE_ID) ;    
 END;
 ```
-![过程调用结果](./过程调用.png)
+![images](https://github.com/lfd1109550635/oricle/blob/master/test5/过程调用.png)
 
 
 #### 提高订单统计速度
