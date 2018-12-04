@@ -16,7 +16,7 @@ ALTER USER ACCOUNT UNLOCK;
 ```
 结果
 
-![分配表空间结果](./用户分配表空间.png)
+![images](https://github.com/lfd1109550635/oricle/blob/master/test4/用户分配表空间11.png)
 
 ### 为用户分配权限
 ```sql
