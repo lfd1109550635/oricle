@@ -1,3 +1,6 @@
+用户名：linfudong233
+密码：123
+
 #**实验二**<br>
 第1步：以system登录到pdborcl，创建角色con_res1_view和用户new_wang9527，并授权和分配空间：<br>
 $ sqlplus system/123@pdborcl<br>
